@@ -1,9 +1,9 @@
 <template>
-  <div class="flex h-screen bg-blue-400">
+  <div class="flex h-screen bg-blue-400 ">
     <header/>
-    <div class="inline-flex flex-wrap">
+    <div class="inline-flex flex-wrap h-full">
       <unicorn-card
-              class="w-5/10"
+              class="w-4/10"
               v-for="(item, index) in unicorns"
               :key="index"
               :nom="item.nom"
