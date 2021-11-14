@@ -4,6 +4,28 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+    height: {
+      sm: '20px',
+      md: '35px',
+      lg: '75px',
+      xl: '180px',
+    },
     extend: {
       width: {
         '1/20': '5%',
@@ -31,7 +53,7 @@ module.exports = {
       white: colors.white,
       black: colors.black,
       gray: colors.blueGray,
-      orange: colors.orange,
+      blue: colors.blue,
       red: '#530000'
     },
     opacity: {
