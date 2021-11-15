@@ -1,0 +1,236 @@
+.content {
+    padding: 15px 5px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(158, 21, 21);
+    padding: 10px 20px;
+}
+
+
+.title {
+    color: #FFF;
+}
+
+.bandeau{
+    display: flex;
+    margin:auto 10px;
+    text-align:center;
+}
+
+.nav-element {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.nav-element > a {
+    padding: 0 0 0 10px;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-element:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.nav-element:active {
+    background-color: black;
+}
+
+
+.element {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+img {
+    border-radius: 5px;
+}
+
+.gestionarticles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*
+    align-self: flex-start;
+    */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+
+}
+
+
+
+.contentarticles{
+    margin-top: 5%;
+}
+
+
+i.fb,       span.fb{     	color: #3b5998; }
+i.tw,       span.tw{     	color: #00aced; }
+i.surfingbird{ max-height: 24px; min-width: 100%; }
+i.surfingbird::before{
+    /*
+    content: url(https://bootstrap-ru.com/cdn/i/surf.png);
+    */
+    position: relative;
+    left:0px;
+    top: -7px;
+    float: left;
+}
+
+ul{
+	list-style: none;
+	font-size: large;
+}
+
+li{
+	margin-bottom: 2%;
+}
+
+
+
+.responsive-map-container {
+    overflow: hidden;
+}
+
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
+	margin-left: 10%;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+.containerform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-right: 15%;
+} 
+
+
+
+@media screen and (max-width:999px){
+    .element {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bandeau {
+        display: block;
+    }
+	
+	.footer{
+		background-color: rgb(79, 26, 202);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#third{
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+	
+	#titlefooter{
+		text-align: center;
+	}
+	
+	li{
+		margin-bottom: 2%;
+		text-align: center;
+	}
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titrearticles{
+        text-align: center;
+    }
+
+    .contentarticles{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+@media screen and (min-width:1000px)  {
+    .element > * {
+        display: inline-block;
+    }
+    .element > div{
+        width:60%;
+    }
+	
+	
+	.footer{
+		background-color: rgb(79, 26, 202);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+	
+	#third{
+		align-self: center;
+	}
+
+    .rightside{
+        direction: rtl;
+    }
+
+    li{
+        margin-left: 10%;
+    }
+}

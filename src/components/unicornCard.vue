@@ -1,7 +1,7 @@
 <template>
-    <div class="m-2 bg-blue-300 h-50 shadow-md rounded">
+    <div class="bg-blue-300 h-50 shadow-md rounded">
         <img :src="card_image" class="w-11/20 m-auto pt-2 pb-2">
-        <div class="w-19/20 bg-blue-100 p-2 rounded m-auto">
+        <div class="w-19/20 bg-blue-100 p-2 rounded m-11">
             {{ nom }}
         </div>
         {{ description }}
