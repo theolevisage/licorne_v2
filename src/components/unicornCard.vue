@@ -1,14 +1,22 @@
 <template>
-    <div class="bg-blue-300 h-50 shadow-md rounded">
-        <img :src="card_image" class="w-11/20 m-auto pt-2 pb-2">
-        <div class="w-19/20 bg-blue-100 p-2 rounded m-11">
-            {{ nom }}
+    <div class="content">
+        <div class="element w-3/10">
+            <img :src="card_image">
+            <div class="gestionarticles">
+                <div class="titrearticles">
+                    <h2>{{ nom }}</h2>
+                </div>
+
+                <div class="contentarticles">
+                    {{ description}}
+                </div>
+            </div>
         </div>
-        {{ description }}
     </div>
 </template>
 
 <script>
+
     import card_image from "../assets/img/dark_unicorn_butterfly.jpg"
 
     export default {

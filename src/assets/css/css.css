@@ -1,7 +1,6 @@
 .content {
     padding: 15px 5px;
-    background-color: #000;
-    color: #FFF;
+    margin-left: 5%;
 }
 
 .header {
@@ -53,6 +52,7 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
+    flex-direction: row;
 }
 
 
@@ -64,11 +64,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*
-    align-self: flex-start;
-    */
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 10%;
 
 }
@@ -76,7 +73,7 @@ img {
 
 
 .contentarticles{
-    margin-top: 5%;
+    margin-top: 25%;
 }
 
 
@@ -159,9 +156,9 @@ input[type=submit]:hover {
 
 @media screen and (max-width:999px){
     .element {
-        display: block;
+        display: flex;
         width: 100%;
-        box-sizing: border-box;
+        align-items: center;
     }
 
     .bandeau {
@@ -189,19 +186,15 @@ input[type=submit]:hover {
 		margin-bottom: 2%;
 		text-align: center;
 	}
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .titrearticles{
-        text-align: center;
+        margin-left: 15%;
     }
 
     .contentarticles{
         text-align: justify;
         text-justify: inter-word;
+        margin-left: 15%;
     }
 }
 
@@ -228,6 +221,8 @@ input[type=submit]:hover {
 
     .rightside{
         direction: rtl;
+        margin-right: 5%;
+        margin-top: 3%;
     }
 
     li{

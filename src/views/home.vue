@@ -12,22 +12,17 @@
 
   <Header/>
 
-
-  <div class="flex h-screen bg-blue-400 ">
-    <div class="flex-wrap h-full row">
       <unicorn-card
-              class="w-4/10"
               v-for="(item, index) in unicorns"
+              :class="{rightside: index%2 == 1}"
               :key="index"
               :nom="item.nom"
               :description="item.description"
               :image="item.image"
       />
-    </div>
-  </div>
-
 
   <Footer/>
+
 </template>
 
 <style>
