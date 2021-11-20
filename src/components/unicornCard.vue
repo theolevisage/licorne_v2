@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <div class="element w-3/10">
+        <div class="element w-4/10">
             <img :src="card_image">
             <div class="gestionarticles">
                 <div class="titrearticles">

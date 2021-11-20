@@ -1,15 +1,28 @@
+import path from 'path/posix';
 import {
   createRouter,
   createWebHistory,
   RouteRecordRaw
 } from 'vue-router';
+
+
 import Home from '../views/home.vue';
+import Register from '../views/register.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      requiresAuth: true,
+      requireBeAdmin: false
+    }
+  },
+  {
+    path: '/register',
+    name: 'Registrer',
+    component: Register,
     meta: {
       requiresAuth: true,
       requireBeAdmin: false

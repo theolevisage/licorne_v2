@@ -66,11 +66,14 @@ img {
     justify-content: space-around;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 
 }
 
 
+.login{
+    margin-left: auto;
+}
 
 .contentarticles{
     margin-top: 25%;
@@ -153,6 +156,12 @@ input[type=submit]:hover {
 } 
 
 
+.rightside{
+    direction: rtl;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
 
 @media screen and (max-width:999px){
     .element {
@@ -218,12 +227,6 @@ input[type=submit]:hover {
 	#third{
 		align-self: center;
 	}
-
-    .rightside{
-        direction: rtl;
-        margin-right: 5%;
-        margin-top: 3%;
-    }
 
     li{
         margin-left: 10%;
