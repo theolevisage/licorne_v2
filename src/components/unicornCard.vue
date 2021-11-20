@@ -32,12 +32,7 @@
                 default: `../assets/img/logo_eye.webp`
                 //TODO définir un traitement pour importer l'image
             },
-        },
-        computed: {
-            image_import() {
-                return import(this.image);
-            }
-        },
+        }
     }
 </script>
 

@@ -60,6 +60,7 @@ module.exports = {
       black: colors.black,
       gray: colors.blueGray,
       blue: colors.blue,
+      teal: colors.teal,
       red: '#530000'
     },
     opacity: {
