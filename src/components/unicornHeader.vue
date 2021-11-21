@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-pink-400 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <svg style="width:28px;height:28px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M20 12V19L17 20L14 15.33C13.71 14.89 13 15.14 13.08 15.67L14 23L4 18L4.96 12.75C5.56 9.42 8.46 7 11.84 7H13L19 1L17 7H20L18.42 9.37C19.36 9.88 20 10.86 20 12Z" />
@@ -16,14 +16,11 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" v-show="!collapse">
             <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                    Docs
+                <a @click="goto('/')" class="block mt-4 lg:inline-block lg:mt-0 text-pink-200 hover:text-white mr-4">
+                    Accueil
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                    Examples
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                    Blog
+                <a @click="goto('/contact')" class="block mt-4 lg:inline-block lg:mt-0 text-pink-200 hover:text-white mr-4">
+                    Contact
                 </a>
             </div>
         </div>
@@ -45,6 +42,9 @@
             },
             onResize() {
                 this.windowWidth = window.innerWidth
+            },
+            goto(route) {
+                this.$router.push(route);
             }
         },
         watch: {

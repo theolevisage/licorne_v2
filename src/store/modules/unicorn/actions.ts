@@ -18,8 +18,8 @@ export const actions: IActions = {
      * @param commit
      */
     [UNICORN_STORE.ACTIONS.INITIALIZE_STORE]({commit}) {
-        let unicorn1 = new Unicorn('Pénélope', 'Elle va vite', '../assets/img/dark_unicorn.jpg');
-        let unicorn2 = new Unicorn('Gertrude', 'Elle fait des calins', '../assets/img/dark_unicorn.jpg');
+        let unicorn1 = new Unicorn('Pénélope', 'Elle va vite', '../assets/img/dark_unicorn.jpg', 3.78, 95, 'Coureuse');
+        let unicorn2 = new Unicorn('Gertrude', 'Elle fait des calins', '../assets/img/dark_unicorn.jpg', 4.58, 110, 'Volante');
         commit(UNICORN_STORE.MUTATIONS.ADD_UNICORN, unicorn1);
         commit(UNICORN_STORE.MUTATIONS.ADD_UNICORN, unicorn2);
     },

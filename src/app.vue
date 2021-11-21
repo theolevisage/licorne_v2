@@ -1,8 +1,8 @@
 <template>
   <div class="app">
-    <div>
+      <unicorn-header></unicorn-header>
       <router-view />
-    </div>
+      <unicorn-footer></unicorn-footer>
   </div>
 </template>
 
@@ -11,8 +11,14 @@ import {defineComponent} from 'vue';
 import image from './assets/img/title.png'
 import { UNICORN_STORE } from "./store/constants";
 
+import UnicornHeader from "./components/unicornHeader.vue";
+import UnicornFooter from "./components/unicornFooter.vue";
+
 export default defineComponent({
   name: 'App',
+  components: {
+    UnicornHeader, UnicornFooter
+  },
   data() {
     return {
       isOpen: false,

@@ -61,7 +61,9 @@ module.exports = {
       gray: colors.blueGray,
       blue: colors.blue,
       teal: colors.teal,
-      red: '#530000'
+      yellow: colors.yellow,
+      red: colors.red,
+      pink: colors.pink
     },
     opacity: {
       '0': '0',

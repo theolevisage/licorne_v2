@@ -4,17 +4,19 @@ import {
   RouteRecordRaw
 } from 'vue-router';
 import Home from '../views/home.vue';
+import Contact from '../views/contact.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
-    meta: {
-      requiresAuth: true,
-      requireBeAdmin: false
-    }
-  }
+    component: Home
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
 ]
 
 const router = createRouter({
