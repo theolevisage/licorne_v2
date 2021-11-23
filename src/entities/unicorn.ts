@@ -1,5 +1,3 @@
-import axios, {AxiosStatic} from "axios";
-
 export class Unicorn {
     private _nom: string;
     private _description: string;
