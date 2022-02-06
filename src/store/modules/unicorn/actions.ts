@@ -20,6 +20,5 @@ export const actions: IActions = {
      */
     [UNICORN_STORE.ACTIONS.RETURN_UNICORNS]({commit}) {
         return new Array<Unicorn>();
-    },
-
+    }
 }

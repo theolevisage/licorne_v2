@@ -20,12 +20,13 @@
 import {defineComponent} from 'vue';
 import UnicornCard from "../components/unicornCard.vue";
 import { UNICORN_STORE } from "../store/constants"
+import {Unicorn} from "../entities/unicorn";
 
 export default defineComponent({
   name: 'Home',
   components: {UnicornCard},
   computed: {
-    unicorns() {
+    unicorns() : Array<Unicorn>{
       return this.$store.getters[UNICORN_STORE.GETTERS.GET_UNICORNS];
     }
   },
